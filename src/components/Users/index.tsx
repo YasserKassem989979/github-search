@@ -1,7 +1,7 @@
 import React from "react";
 import UserItem from "./UserItem";
 import LoadingSpinner from "../common/Loading";
-import { UserItemType } from "@/lib/types/userType";
+import { UserItemType } from "@/lib/types/api/userType";
 
 interface UserListProps {
     users: UserItemType[];

@@ -1,5 +1,5 @@
 import React from "react";
-import { RepoItemType } from "@/lib/types/repoType";
+import { RepoItemType } from "@/lib/types/api/repoType";
 import RepoItem from "./RepoItem";
 import LoadingSpinner from "../common/Loading";
 

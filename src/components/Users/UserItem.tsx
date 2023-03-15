@@ -1,5 +1,5 @@
 import React from "react";
-import { UserItemType } from "@/lib/types/userType";
+import { UserItemType } from "@/lib/types/api/userType";
 import Image from "next/image";
 
 interface UserItemProps {

@@ -1,5 +1,5 @@
 import { getLanguageColor } from "@/lib/theme/themeUtil";
-import { RepoItemType } from "@/lib/types/repoType";
+import { RepoItemType } from "@/lib/types/api/repoType";
 import { formatStartsCount } from "@/lib/util/numbers";
 import moment from "moment";
 import React from "react";

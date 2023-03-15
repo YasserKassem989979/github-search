@@ -1,7 +1,7 @@
 import { queryByTestId, render, getByTestId, screen } from '@testing-library/react'
 import UserItem from '../UserItem';
 import '@testing-library/jest-dom';
-import { UserItemType } from '@/lib/types/userType';
+import { UserItemType } from '@/lib/types/api/userType';
 
 const user: UserItemType = {
     "login": "MMKV",
