@@ -9,16 +9,13 @@
 -->
 
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <h1 align="center">GitHub-Search-API</h1>
-
-  <p align="center">
+  <h4 align="center">
     A Next.js app to search in GitHub Repositories and Users!
     <br />
-    <br />
     <a href="https://github-search-api-opal.vercel.app/">View Demo</a>
-  </p>
+  </h4>
 </div>
 
 ### Built With
@@ -45,11 +42,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Unit Test
 
-- `npm run test` to run test
+- `npm run test` to run unit tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
