@@ -1,5 +1,4 @@
-import React, { ForwardedRef, forwardRef } from "react";
-import styles from "./styles.module.css";
+import React from "react";
 
 interface InputTextProps extends React.HTMLProps<HTMLInputElement> {
     //extra props
@@ -18,6 +17,8 @@ const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(({ styleCla
         />
     );;
 });
+
+InputText.displayName = "InputText";
 
 
 export default InputText;

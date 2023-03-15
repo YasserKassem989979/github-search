@@ -7,7 +7,7 @@ const instance = axios.create({
   headers: { 'accept': 'application/vnd.github+json' }
 });
 
-export default async function (url: string) {
+export default async function fetcher (url: string) {
   const { data } = await instance.get(url);
   return data;
 }

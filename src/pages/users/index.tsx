@@ -1,14 +1,11 @@
-import { useCallback, useState } from 'react'
+import { useCallback } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import useSWR from "swr";
 import fetcher, { DEFAULT_PER_PAGE } from '@/lib/util/fetcher';
 import { SEARCH_TYPE_VALUES } from '@/lib/types/constant';
 import Filter from '@/components/Filter';
 import UserList from '@/components/Users';
-import Pagination from '@/components/common/Pagination';
 import Header from '@/components/common/Header';
-import useViewport from '@/hooks/useViewPort';
 import useSWRInfinite from "swr/infinite";
 import Button from '@/components/common/Button'
 
@@ -16,7 +13,6 @@ const getURl = (page: number, q: any) => `/users?${q ? "q=" + q + "&" : ""}page=
 
 
 export default function Users() {
-  const { vw } = useViewport();
   const router = useRouter();
   const { query } = router;
   const { q } = query;
@@ -60,7 +56,7 @@ export default function Users() {
           <div className='md:col-span-2 px-4 pb-4'>
             <h3 className='text-lg font-semibold border-b-2 pb-4 mb-4'>{data?.[0]?.total_count} users results</h3>
             <UserList users={users} loading={isLoading} error={error} />
-            {!isLoading&& !error && !isReachingEnd && <div className='flex justify-center mt-4'>
+            {!isLoading && !error && !isReachingEnd && <div className='flex justify-center mt-4'>
               <Button
                 styleClass='w-full capitalize flex justify-center border border-slate-400'
                 disabled={isLoadingMore || isReachingEnd}
