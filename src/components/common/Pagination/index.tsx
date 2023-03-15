@@ -27,7 +27,7 @@ const Pagination = ({
 
     const handleClick = useCallback((index: number) => {
         onPageSelected(index);
-    }, []);
+    }, [onPageSelected]);
 
     return (
         <ul className="flex items-center">

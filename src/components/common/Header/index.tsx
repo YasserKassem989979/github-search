@@ -21,7 +21,7 @@ const Header = ({ placeholder, className, onSearch, ...props }: HeaderProps) => 
         if (onSearch && inputRef.current?.value) {
             onSearch(inputRef.current?.value)
         }
-    }, []);
+    }, [onSearch]);
 
     return (
         <header

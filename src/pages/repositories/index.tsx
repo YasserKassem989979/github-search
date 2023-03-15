@@ -30,7 +30,7 @@ export default function Repos() {
 
     const onSearch = useCallback((text: string) => {
         router.replace(`/repositories?q=${text}`)
-    }, []);
+    }, [router]);
 
     const repos = data ? [].concat(...data.map(batch => batch.items)) : [];
     const isLoadingMore =

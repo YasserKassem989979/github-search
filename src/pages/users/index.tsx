@@ -35,7 +35,7 @@ export default function Users() {
 
   const onSearch = useCallback((text: string) => {
     router.replace(`/users?q=${text}`)
-  }, []);
+  }, [router]);
 
   const users = data ? [].concat(...data.map(batch => batch.items)) : [];
   const isLoadingMore =
