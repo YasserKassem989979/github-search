@@ -2,7 +2,7 @@ import { getLanguageColor } from "@/lib/theme/themeUtil";
 import { RepoItemType } from "@/lib/types/api/repoType";
 import { formatStartsCount } from "@/lib/util/numbers";
 import moment from "moment";
-import React from "react";
+import React, { memo } from "react";
 import { GoRepo, GoStar, GoPrimitiveDot } from "react-icons/go";
 import Tag from "../common/Tag";
 
@@ -71,4 +71,4 @@ const RepoItem: React.FC<RepoItemProps> = ({ repo, styleClasses }) => {
     </div>
 };
 
-export default RepoItem;
+export default memo(RepoItem);

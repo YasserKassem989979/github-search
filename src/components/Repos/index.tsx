@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { RepoItemType } from "@/lib/types/api/repoType";
 import RepoItem from "./RepoItem";
 import LoadingSpinner from "../common/Loading";
@@ -33,4 +33,4 @@ const ReposList = ({ repos, loading, error }: ReposListProps) => {
 
 };
 
-export default ReposList;
+export default memo(ReposList);

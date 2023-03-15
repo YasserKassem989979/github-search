@@ -1,6 +1,6 @@
 import { FilterItemType } from "@/lib/types/filterType";
 import Link from "next/link";
-import React from "react";
+import React, { memo } from "react";
 import FilterItem from "./FilterItem";
 
 interface FilterProps {
@@ -27,4 +27,4 @@ const FILTERS: FilterItemType[] = [
     { title: "Users", type: "users" }
 ]
 
-export default Filter;
+export default memo(Filter);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./styles.module.css";
 import { GoRepoClone, GoPerson } from "react-icons/go";
 import { FilterItemType } from "@/lib/types/filterType";
@@ -35,4 +35,4 @@ const FilterItem: React.FC<FilterItemProps> = ({ filter, isSelected, styleClasse
     </div>
 };
 
-export default FilterItem;
+export default memo(FilterItem);
