@@ -37,9 +37,20 @@
 
 To get the frontend running locally:
 
-- Clone this repo
-- `npm install` to install all dependencies
-- `npm run dev` to start the local server
+1. Clone the repo
+   ```sh
+   git clone https://github.com/YasserKassem989979/github-search.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the local server
+   ```sh
+   npm run dev
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
