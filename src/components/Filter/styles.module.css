@@ -1,0 +1,12 @@
+.listItem {
+  padding: 4px 8px;
+  min-height: 42px;
+  cursor: pointer;
+}
+
+.listItemSelected {
+  background: #d3e3fd;
+  border-radius: 3px;
+  color:#202124;
+  border-radius: 0 16px 16px 0;
+}
