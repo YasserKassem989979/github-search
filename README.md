@@ -13,10 +13,11 @@
   <h1 align="center">GitHub-Search-API</h1>
   <h4 align="center">
     A Next.js app to search in GitHub Repositories and Users!
-    <br />
-    <a href="https://github-search-api-opal.vercel.app/">View Demo</a>
   </h4>
+  <br/>
 </div>
+
+### [Demo](https://github-search-api-opal.vercel.app/)
 
 ### Built With
 
