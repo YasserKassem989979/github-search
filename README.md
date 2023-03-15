@@ -50,8 +50,6 @@ To get the frontend running locally:
    npm run dev
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Unit Test
