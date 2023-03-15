@@ -9,7 +9,7 @@ import { SEARCH_TYPE_VALUES } from '@/lib/types/constant'
 import useSWRInfinite from "swr/infinite";
 import Button from '@/components/common/Button'
 
-const getURl = (page: number, q: any) => `/repositories?${q ? "q=" + encodeURIComponent(q) + "&" : ""}page=${page}&per_page=${DEFAULT_PER_PAGE}`;
+const getURl = (page: number, q: any) => `/repositories?${q ? "q=" + q + "&" : ""}page=${page}&per_page=${DEFAULT_PER_PAGE}`;
 
 export default function Repos() {
     const router = useRouter();
@@ -53,7 +53,7 @@ export default function Repos() {
                     <div className='md:col-span-2 px-4 pb-4'>
                         <h3 className='text-lg font-semibold border-b-2 pb-4 mb-4'>{data?.[0]?.total_count} repository results</h3>
                         <ReposList repos={repos} loading={isLoading} error={error} />
-                        {!isLoading && !error && !isReachingEnd && <div className='flex justify-center mt-4'>
+                        {!isLoading&& !error && !isReachingEnd && <div className='flex justify-center mt-4'>
                             <Button
                                 styleClass='w-full capitalize flex justify-center border border-slate-400'
                                 disabled={isLoadingMore || isReachingEnd}
