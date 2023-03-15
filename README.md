@@ -11,11 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/YasserKassem989979/github-search">
-    <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">GitHub-Search-API</h3>
+  <h1 align="center">GitHub-Search-API</h1>
 
   <p align="center">
     A Next.js app to search in GitHub Repositories and Users!
