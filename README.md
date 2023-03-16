@@ -35,6 +35,10 @@
 
 ## Getting Started
 
+### System Requirements
+- Node.js 14.6.0 or newer
+- MacOS, Windows (including WSL), and Linux are supported
+<br/>
 To get the frontend running locally:
 
 1. Clone the repo
@@ -62,21 +66,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Usage
 
-Search by repository name, description, or contents of the README file
-With the in qualifier you can restrict your search to the repository name, repository description, repository topics, contents of the README file, or any combination of these. When you omit this qualifier, only the repository name, description, and topics are searched.
-<br />
-Examples:
-jquery in:name matches repositories with "jquery" in the repository name.
-jquery in:name,description matches repositories with "jquery" in the repository name or description.
+Examples
+Here are some examples of search queries you can use with the UI:
+
+1. Search for repositories containing the keyword "python" in the name: Choose "Repositories" and enter "python in:name" into the "Search" field.
+2. Search for personal accounts named "mike" that were created before 2011 Choose "Users" and enter "mike in:name created:<2011-01-01 type:user" into the "Search" field.
 
 _To learn more about the format of the query, please refer to the [Constructing a search query](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)_
-<br/>
-By default, searching users will return both personal and organizations. However, you can use the type qualifier to restrict search results to personal accounts or organizations only.
-
-Examples:
-
-mike in:name type:user matches personal accounts named "mike".
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
