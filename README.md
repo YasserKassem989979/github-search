@@ -83,6 +83,9 @@ in the response instead it includes `forks_url` and you have to fetch them separ
 
 - Due to the tight deadline and competing priorities, I regret to inform you that I was not able to cover all unit tests for the project and keep following TDD.I understand the importance of comprehensive unit testing for ensuring the quality of the code and I apologize for not being able to cover all of the tests in this iteration .
 
+- While it was my first time working on Next.js, I gave it my best effort to ensure that I delivered a quality outcome.
+I understand that there may be areas where I could have improved, but I wanted to assure you that I did my absolute best with the knowledge and skills that I have. I am open to any feedback or constructive criticism that you may have.
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
