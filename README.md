@@ -66,14 +66,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Usage
 
-Examples
 Here are some examples of search queries you can use with the UI:
 
-1. Search for repositories containing the keyword "python" in the name: Choose "Repositories" and enter "python in:name" into the "Search" field.
-2. Search for personal accounts named "mike" that were created before 2011 Choose "Users" and enter "mike in:name created:<2011-01-01 type:user" into the "Search" field.
+1. Search for repositories containing the keyword "python" in the name: Choose "Repositories" and enter `python in:name` into the "Search" field.
+2. Search for personal accounts named "mike" that were created before 2011 Choose "Users" and enter `mike in:name created:<2011-01-01 type:user` into the "Search" field.
 
 _To learn more about the format of the query, please refer to the [Constructing a search query](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Note
+
+- Please be aware of the GitHub API rate limit and ensure that you are using the API responsibly.
+
+- GitHub Search API does not include Username/Avatar of the last 3 users who forked it with avatar linking to the fork 
+in the response instead it includes `forks_url` and you have to fetch them separately.
+
+- Due to the tight deadline and competing priorities, I regret to inform you that I was not able to cover all unit tests for the project and keep following TDD.I understand the importance of comprehensive unit testing for ensuring the quality of the code and I apologize for not being able to cover all of the tests in this iteration .
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
